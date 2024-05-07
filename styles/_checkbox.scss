@@ -1,0 +1,17 @@
+/* styling checkbox */
+
+// placeholder selector
+%Dimensions {
+  width: 17px;
+  height: 17px;
+}
+
+.checked {
+  margin-top: 4.5px;
+  accent-color: green;
+  margin-left: 7px;
+}
+
+input[type="checkbox"] {
+  @extend %Dimensions;
+}

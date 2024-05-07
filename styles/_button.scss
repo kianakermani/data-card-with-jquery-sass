@@ -1,0 +1,30 @@
+// button style with map
+$colors: (
+  "bg": #cfe6e3,
+  "borderColor": #b1d6d1,
+  "Color": #288873,
+  "bgHover": rgb(173, 233, 229),
+  "borderHover": #a4fae0,
+);
+
+.button-45 {
+  align-items: center;
+  background-color: map-get($colors, "bg");
+  border: 1px solid map-get($colors, "borderColor");
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: map-get($colors, "Color");
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  padding: 2px 12px;
+  margin-right: 7px;
+  margin-bottom: 15px;
+}
+
+.button-45:hover {
+  background-color: map-get($colors, "bgHover");
+  border-color: map-get($colors, "borderHover");
+}

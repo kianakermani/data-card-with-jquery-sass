@@ -1,0 +1,52 @@
+@use "sass:map";
+@use "./base";
+@use "./card";
+@use "./icon";
+@use "./checkbox";
+@use "./button";
+
+/* styling popup */
+@mixin PopUp {
+  display: none;
+  position: absolute;
+  top: 80%;
+  left: 52%;
+  --bs-table-hover-bg: #ececec;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: #ebf8f7;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 2px;
+  }
+
+  a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5%;
+  }
+
+  a:hover {
+    background-color: #cfe6e3;
+  }
+}
+
+.popup {
+  @include PopUp;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens smaller than 768px */
+  .card {
+    width: 90%;
+  }
+}
