@@ -27,13 +27,16 @@
 
       // Card body
       var cardBody = $('<div class="card-body">');
-      cardBody.append($("<p>").text("نام نقش : " + RoleName));
-      cardBody.append($("<p>").text("نام نوع موحودیت : " + EntityTypeName));
-      cardBody.append($("<p>").text("عنوان : " + Title));
-      cardBody.append($("<p>").text("نام اقدام : " + ActionName));
-      cardBody.append($("<p>").text("شماره موجودیت : " + EntityNumber));
-      cardBody.append($("<p>").text("تاریخ دریافت : " + ReceiveDate));
-      cardBody.append($("<p>").text("نوع : " + FollowingType));
+      var infoText = function (text) {
+        return $("<p>").text(text);
+      };
+      cardBody.append(infoText("نام نقش : " + RoleName));
+      cardBody.append(infoText("نام نوع موحودیت : " + EntityTypeName));
+      cardBody.append(infoText("عنوان : " + Title));
+      cardBody.append(infoText("نام اقدام : " + ActionName));
+      cardBody.append(infoText("شماره موجودیت : " + EntityNumber));
+      cardBody.append(infoText("تاریخ دریافت : " + ReceiveDate));
+      cardBody.append(infoText("نوع : " + FollowingType));
       card.append(cardBody);
       card.data("uniqueKey", ID);
 
@@ -66,34 +69,23 @@
 
           var clickedElement = $(this).closest(".card").attr("ukey");
 
-          var ID = $('.card[ukey="' + clickedElement + '"]').attr("ukey");
-          var SenderName = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-header > span")
-            .text();
-          var RoleName = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:first")
-            .text();
-          var EntityTypeName = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:nth-child(2)")
-            .text();
-          var Title = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:nth-child(3)")
-            .text();
-          var ActionName = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:nth-child(4)")
-            .text();
-          var EntityNumber = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:nth-child(5)")
-            .text();
-          var ReceiveDate = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:nth-child(6)")
-            .text();
-          var FollowingType = $('.card[ukey="' + clickedElement + '"]')
-            .find(".card-body > p:nth-child(7)")
-            .text();
+          var $checkedCard = $(
+            '.card[ukey="' + clickedElement + '"] > .card-body'
+          );
+          var SenderName = $(
+            '.card[ukey="' + clickedElement + '"] > .card-header > span'
+          ).text();
+
+          var RoleName = $checkedCard.find("p:first").text();
+          var EntityTypeName = $checkedCard.find("p:nth-child(2)").text();
+          var Title = $checkedCard.find("p:nth-child(3)").text();
+          var ActionName = $checkedCard.find("p:nth-child(4)").text();
+          var EntityNumber = $checkedCard.find("p:nth-child(5)").text();
+          var ReceiveDate = $checkedCard.find("p:nth-child(6)").text();
+          var FollowingType = $checkedCard.find("p:nth-child(7)").text();
 
           var card = $('<div class="card mb-3 mt-3">');
-          card.attr("uKey", ID);
+          card.attr("uKey", clickedElement);
 
           var cardHeader = $('<div class="card-header">').append(
             $("<span>").text(SenderName)
@@ -102,13 +94,13 @@
 
           // Card body
           var cardBody = $('<div class="card-body">');
-          cardBody.append($("<p>").text(RoleName));
-          cardBody.append($("<p>").text(EntityTypeName));
-          cardBody.append($("<p>").text(Title));
-          cardBody.append($("<p>").text(ActionName));
-          cardBody.append($("<p>").text(EntityNumber));
-          cardBody.append($("<p>").text(ReceiveDate));
-          cardBody.append($("<p>").text(FollowingType));
+          cardBody.append(infoText(RoleName));
+          cardBody.append(infoText(EntityTypeName));
+          cardBody.append(infoText(Title));
+          cardBody.append(infoText(ActionName));
+          cardBody.append(infoText(EntityNumber));
+          cardBody.append(infoText(ReceiveDate));
+          cardBody.append(infoText(FollowingType));
           card.append(cardBody);
           card.data("uniqueKey", ID);
 
@@ -124,7 +116,7 @@
         event.preventDefault();
         var currentID = $(this).closest(".card").data("uniqueKey"); // Get the uniqueKey
 
-        // Remove rows
+        // Remove all
         $(".card").each(function () {
           if ($(this).attr("ukey") == currentID) {
             $(this).remove();
