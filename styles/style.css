@@ -3,6 +3,23 @@ body {
   direction: rtl;
   background-color: #f8f8f8;
   font-family: Sahel VF;
+  margin: 0;
+}
+
+.lDirection {
+  direction: ltr;
+}
+
+select {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+option {
+  font-size: large;
 }
 
 /* styling card header */
@@ -81,6 +98,60 @@ input[type=checkbox] {
 .button-45:hover {
   background-color: rgb(173, 233, 229);
   border-color: #a4fae0;
+}
+
+.dark-theme {
+  background-color: rgb(30, 30, 30);
+}
+.dark-theme select {
+  background-color: #444444;
+  color: #e1e1e1;
+}
+.dark-theme .btn-action {
+  background-color: #7e7e7e;
+}
+.dark-theme .fa-circle-info:hover {
+  color: rgb(213, 213, 213);
+}
+.dark-theme .button-45 {
+  background-color: #214d47;
+  border: 1px solid #b1d6d1;
+  color: #59c4ad;
+}
+.dark-theme .button-45:hover {
+  background-color: rgb(52, 126, 121);
+  border-color: #a4fae0;
+}
+.dark-theme .popup {
+  --bs-table-hover-bg: #535353;
+  border: 1px solid #ccc;
+}
+.dark-theme .popup a {
+  color: #9b9b9b;
+}
+.dark-theme .popup a:hover {
+  background-color: #444847;
+}
+.dark-theme .card-header {
+  background-color: #12463b;
+  color: #e1e1e1;
+}
+.dark-theme .card-body {
+  background-color: #2f534e;
+  color: #e1e1e1;
+}
+.dark-theme .card-footer {
+  background-color: #3f635b;
+}
+.dark-theme .popup {
+  background-color: #3f635b;
+  border: 1px solid #ccc;
+}
+.dark-theme .popup a {
+  color: #e1e1e1;
+}
+.dark-theme .popup a:hover {
+  background-color: #4e7d70;
 }
 
 /* styling popup */

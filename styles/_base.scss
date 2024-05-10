@@ -5,4 +5,21 @@ body {
   direction: rtl;
   background-color: $base-bg-color;
   font-family: Sahel VF;
+  margin: 0;
+}
+
+.lDirection {
+  direction: ltr;
+}
+
+select {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+option {
+  font-size: large;
 }
