@@ -6,10 +6,6 @@ body {
   margin: 0;
 }
 
-.lDirection {
-  direction: ltr;
-}
-
 select {
   padding: 5px;
   margin-bottom: 10px;
@@ -152,6 +148,19 @@ input[type=checkbox] {
 }
 .dark-theme .popup a:hover {
   background-color: #4e7d70;
+}
+
+.lDirection {
+  direction: ltr;
+}
+.lDirection .button-45 {
+  margin-left: 7px;
+}
+.lDirection .checked {
+  margin-right: 7px;
+}
+.lDirection .popup {
+  left: 8%;
 }
 
 /* styling popup */
