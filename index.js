@@ -3,38 +3,6 @@ var xml =
 
 //getting data - showing table
 $(document).ready(function () {
-  //theme
-  $("#theme-selector").append("<option value='light'>روشن</option>");
-  $("#theme-selector").append("<option value='dark'>تیره</option>");
-
-  $("#theme-selector").val("light");
-
-  $("#theme-selector").change(function () {
-    var theme = $(this).val();
-
-    if (theme === "light") {
-      $("body").removeClass("dark-theme");
-    } else {
-      $("body").addClass("dark-theme");
-    }
-  });
-
-  //direction
-  $("#direction-selector").append("<option value='rtl'>راست به چپ</option>");
-  $("#direction-selector").append("<option value='ltr'>چپ به راست</option>");
-
-  $("#direction-selector").val("rtl");
-
-  $("#direction-selector").change(function () {
-    var theme = $(this).val();
-
-    if (theme === "rtl") {
-      $("body").removeClass("lDirection");
-    } else {
-      $("body").addClass("lDirection");
-    }
-  });
-
   $("#card-container").processData(xml);
 
   //icon button - open popup
