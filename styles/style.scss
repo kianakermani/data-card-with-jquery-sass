@@ -5,19 +5,16 @@
 @use "./checkbox";
 @use "./button";
 @use "./dark";
-@use "./lDirection";
+@use "./Direction";
+@use "./Ltheme";
 
 /* styling popup */
 @mixin PopUp {
   display: none;
   position: absolute;
   top: 80%;
-  left: 52%;
-  --bs-table-hover-bg: #ececec;
-  border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5%;
-  background-color: #ebf8f7;
 
   ul {
     list-style: none;
@@ -33,12 +30,7 @@
     display: block;
     padding: 5px 10px;
     text-decoration: none;
-    color: #000;
     border-radius: 5%;
-  }
-
-  a:hover {
-    background-color: #cfe6e3;
   }
 }
 
@@ -51,4 +43,12 @@
   .card {
     width: 90%;
   }
+}
+
+.dark-theme {
+  @import "./Dtheme";
+}
+
+.light-theme {
+  @import "./Ltheme";
 }
