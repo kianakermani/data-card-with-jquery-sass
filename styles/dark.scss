@@ -1,3 +1,5 @@
+@use "./style.scss";
+
 $colors: (
   "baseBgColor": rgb(30, 30, 30),
   "selecetBgColor": #444444,
@@ -73,3 +75,4 @@ select {
 .card-footer {
   background-color: map-get($colors, "footerBg");
 }
+

@@ -4,9 +4,7 @@
 @use "./icon";
 @use "./checkbox";
 @use "./button";
-@use "./dark";
 @use "./Direction";
-@use "./Ltheme";
 
 /* styling popup */
 @mixin PopUp {
@@ -43,12 +41,4 @@
   .card {
     width: 90%;
   }
-}
-
-.dark-theme {
-  @import "./Dtheme";
-}
-
-.light-theme {
-  @import "./Ltheme";
 }
