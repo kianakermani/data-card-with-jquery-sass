@@ -11,8 +11,7 @@ $colors: (
   "popupBg": #3f635b,
   "borderColorHover": #a4fae0,
   "border-popup": #ccc,
-  "a-color": #000,
-  "aColor": #e1e1e1,
+  "aColor": #b9b9b9,
   "a-hoverBg": #4e7d70,
   "bgcard": #2f534e,
   "colorcard": #e1e1e1,
@@ -25,12 +24,12 @@ body {
 }
 
 select {
-  background-color: map-get($colors,  "selecetBgColor");
-  color:map-get($colors, "selectColor");
+  background-color: map-get($colors, "selecetBgColor");
+  color: map-get($colors, "selectColor");
 }
 
 .btn-action {
-  background-color: map-get($colors,  "btnActionBG");
+  background-color: map-get($colors, "btnActionBG");
 }
 
 .fa-circle-info:hover {
@@ -38,51 +37,39 @@ select {
 }
 
 .button-45 {
-  background-color: map-get($colors,   "bgButton");
+  background-color: map-get($colors, "bgButton");
   border: 1px solid map-get($colors, "borderColorButton");
   color: map-get($colors, "colorButton");
 }
 
 .button-45:hover {
-  background-color: map-get($colors,    "bgHover");
-  border-color: map-get($colors,   "borderColorHover");
+  background-color: map-get($colors, "bgHover");
+  border-color: map-get($colors, "borderColorHover");
 }
 
 .popup {
-  border: 1px solid map-get($colors,   "border-popup");
+  border: 1px solid map-get($colors, "border-popup");
+  background-color: map-get($colors, "popupBg");
 }
 
 .popup a {
-  color: map-get($colors,    "aColor");
+  color: map-get($colors, "aColor");
 }
 
 .popup a:hover {
-  background-color: map-get($colors,   "a-hoverBg");
+  background-color: map-get($colors, "a-hoverBg");
 }
 
 .card-header {
-  background-color: map-get($colors,   "bgButton");
-  color: map-get($colors,   "bgButton");
+  background-color: map-get($colors, "bgcard");
+  color: map-get($colors, "colorcard");
 }
 
 .card-body {
-  background-color: map-get($colors,   "bgButton");
-  color: map-get($colors,   "bgButton");
+  background-color: map-get($colors, "bgcard");
+  color: map-get($colors, "colorcard");
 }
 
 .card-footer {
-  background-color: map-get($colors,   "bgButton");
-}
-
-.popup {
-  background-color: map-get($colors,   "bgButton");
-  border: 1px solid map-get($colors,   "bgButton");
-}
-
-.popup a {
-  color: map-get($colors,   "bgButton");
-}
-
-.popup a:hover {
-  background-color: map-get($colors,   "bgButton");
+  background-color: map-get($colors, "footerBg");
 }
