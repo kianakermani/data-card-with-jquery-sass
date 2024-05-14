@@ -135,6 +135,15 @@ body {
   background-color: #f8f8f8;
 }
 
+select {
+  background-color: #f1f1f1;
+  color: #161616;
+}
+
+.btn-action {
+  background-color: #f5f5f5;
+}
+
 .fa-circle-info:hover {
   color: orange;
 }

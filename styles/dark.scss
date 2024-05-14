@@ -1,78 +1,20 @@
 @use "./style.scss";
-
-$colors: (
-  "baseBgColor": rgb(30, 30, 30),
-  "selecetBgColor": #444444,
-  "selectColor": #e1e1e1,
-  "btnActionBG": #7e7e7e,
-  "icon-color": rgb(213, 213, 213),
-  "bgButton": #214d47,
-  "borderColorButton": #b1d6d1,
-  "colorButton": #59c4ad,
-  "bgHover": rgb(52, 126, 121),
-  "popupBg": #3f635b,
-  "borderColorHover": #a4fae0,
-  "border-popup": #ccc,
-  "aColor": #b9b9b9,
-  "a-hoverBg": #4e7d70,
-  "bgcard": #2f534e,
-  "colorcard": #e1e1e1,
-  "footerBg": #3f635b,
+@use "./light.scss" with (
+  $baseBgColor: rgb(30, 30, 30),
+  $selecetBgColor: #444444,
+  $selectColor: #e1e1e1,
+  $btnActionBG: #7e7e7e,
+  $icon-color: rgb(213, 213, 213),
+  $bgButton: #214d47,
+  $borderColorButton: #b4d8d3,
+  $colorButton: #59c4ad,
+  $bgHover: rgb(52, 126, 121),
+  $borderHover: #aefae3,
+  $bg-popup: #3f635b,
+  $border-popup: #ccc,
+  $a-color: #b9b9b9,
+  $a-hover: #4e7d70,
+  $bgcard: #2f534e,
+  $colorcard: #e1e1e1,
+  $footerBg: #3f635b
 );
-
-html,
-body {
-  background-color: map-get($colors, "baseBgColor");
-}
-
-select {
-  background-color: map-get($colors, "selecetBgColor");
-  color: map-get($colors, "selectColor");
-}
-
-.btn-action {
-  background-color: map-get($colors, "btnActionBG");
-}
-
-.fa-circle-info:hover {
-  color: map-get($colors, "icon-color");
-}
-
-.button-45 {
-  background-color: map-get($colors, "bgButton");
-  border: 1px solid map-get($colors, "borderColorButton");
-  color: map-get($colors, "colorButton");
-}
-
-.button-45:hover {
-  background-color: map-get($colors, "bgHover");
-  border-color: map-get($colors, "borderColorHover");
-}
-
-.popup {
-  border: 1px solid map-get($colors, "border-popup");
-  background-color: map-get($colors, "popupBg");
-}
-
-.popup a {
-  color: map-get($colors, "aColor");
-}
-
-.popup a:hover {
-  background-color: map-get($colors, "a-hoverBg");
-}
-
-.card-header {
-  background-color: map-get($colors, "bgcard");
-  color: map-get($colors, "colorcard");
-}
-
-.card-body {
-  background-color: map-get($colors, "bgcard");
-  color: map-get($colors, "colorcard");
-}
-
-.card-footer {
-  background-color: map-get($colors, "footerBg");
-}
-

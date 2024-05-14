@@ -1,60 +1,54 @@
 @use "./style.scss";
-$colors: (
-  "baseBgColor": #f8f8f8,
-  "icon-color": orange,
-  "border-popup": #ccc,
-  "a-color": #000,
-  "a-hover": #cfe6e3,
-  "bg": #cfe6e3,
-  "bg-popup": #ebf8f7,
-  "borderColor": #b1d6d1,
-  "Color": #288873,
-  "bgHover": rgb(173, 233, 229),
-  "borderHover": #a4fae0,
-  "bgcard": #cfe6e3,
-  "colorcard": #288873,
-  "footerBg": #f5f5f5,
-);
+@import "./colorVariables";
 
 html,
 body {
-  background-color: map-get($colors, "baseBgColor");
+  background-color: $baseBgColor;
+}
+
+select {
+  background-color: $selecetBgColor;
+  color: $selectColor;
+}
+
+.btn-action {
+  background-color: $btnActionBG;
 }
 
 .fa-circle-info:hover {
-  color: map-get($colors, "icon-color");
+  color: $icon-color;
 }
 
 .button-45 {
-  background-color: map-get($colors, "bg");
-  border: 1px solid map-get($colors, "borderColor");
-  color: map-get($colors, "Color");
+  background-color: $bgButton;
+  border: 1px solid $borderColorButton;
+  color: $colorButton;
 }
 
 .button-45:hover {
-  background-color: map-get($colors, "bgHover");
-  border-color: map-get($colors, "borderHover");
+  background-color: $bgHover;
+  border-color: $borderHover;
 }
 
 .popup {
-  background-color: map-get($colors, "bg-popup");
-  border: 1px solid map-get($colors, "border-popup");
+  background-color: $bg-popup;
+  border: 1px solid $border-popup;
 
   a {
-    color: map-get($colors, "a-color");
+    color: $a-color;
   }
 
   a:hover {
-    background-color: map-get($colors, "a-hover");
+    background-color: $a-hover;
   }
 }
 
 .card-header {
-  background-color: map-get($colors, "bgcard");
-  color: map-get($colors, "colorcard");
+  background-color: $bgcard;
+  color: $colorcard;
 }
 
 /* styling card footer */
 .card-footer {
-  background-color: map-get($colors, "footerBg");
+  background-color: $footerBg;
 }
