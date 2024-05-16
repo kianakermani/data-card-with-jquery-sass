@@ -1,0 +1,17 @@
+body,
+html {
+  direction: ltr;
+}
+
+.button-45 {
+  margin-right: 0px;
+  margin-left: 7px;
+}
+
+.checked {
+  margin-right: 7px;
+}
+
+.popup {
+  left: 8%;
+}/*# sourceMappingURL=LeftDirection.css.map */

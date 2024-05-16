@@ -48,6 +48,11 @@ select {
   color: $colorcard;
 }
 
+.card-body {
+  background-color: $bodybg;
+  color: $bodyColor;
+}
+
 /* styling card footer */
 .card-footer {
   background-color: $footerBg;

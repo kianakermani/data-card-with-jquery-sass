@@ -3,16 +3,14 @@ $(document).ready(function () {
   $("#direction-selector").append("<option value='rtl'>راست به چپ</option>");
   $("#direction-selector").append("<option value='ltr'>چپ به راست</option>");
 
-  $("body").addClass("rDirection");
   $("#direction-selector").val("rtl");
 
   $("#direction-selector").change(function () {
     var dir = $(this).val();
-
     if (dir === "rtl") {
-      $("body").removeClass("lDirection");
+      $("#stylesheet2").attr("href", "./styles/RightDirection.css");
     } else {
-      $("body").addClass("lDirection");
+      $("#stylesheet2").attr("href", "./styles/LeftDirection.css");
     }
   });
 });

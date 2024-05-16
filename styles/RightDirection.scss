@@ -1,0 +1,19 @@
+@import "./directionVariables";
+
+body,
+html {
+  direction: $dir;
+}
+
+.button-45 {
+  margin-right: $marginr;
+  margin-left: $marginl;
+}
+
+.checked {
+  margin-right: $marginl;
+}
+
+.popup {
+  left: $left;
+}

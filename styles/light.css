@@ -78,29 +78,6 @@ input[type=checkbox] {
   margin-bottom: 15px;
 }
 
-.rDirection {
-  direction: rtl;
-}
-.rDirection .button-45 {
-  margin-right: 7px;
-}
-.rDirection .popup {
-  left: 52%;
-}
-
-.lDirection {
-  direction: ltr;
-}
-.lDirection .button-45 {
-  margin-left: 7px;
-}
-.lDirection .checked {
-  margin-right: 7px;
-}
-.lDirection .popup {
-  left: 8%;
-}
-
 /* styling popup */
 .popup {
   display: none;
@@ -173,6 +150,11 @@ select {
 .card-header {
   background-color: #cfe6e3;
   color: #288873;
+}
+
+.card-body {
+  background-color: rgb(245, 244, 244);
+  color: rgb(8, 8, 8);
 }
 
 /* styling card footer */

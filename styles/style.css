@@ -78,29 +78,6 @@ input[type=checkbox] {
   margin-bottom: 15px;
 }
 
-.rDirection {
-  direction: rtl;
-}
-.rDirection .button-45 {
-  margin-right: 7px;
-}
-.rDirection .popup {
-  left: 52%;
-}
-
-.lDirection {
-  direction: ltr;
-}
-.lDirection .button-45 {
-  margin-left: 7px;
-}
-.lDirection .checked {
-  margin-right: 7px;
-}
-.lDirection .popup {
-  left: 8%;
-}
-
 /* styling popup */
 .popup {
   display: none;

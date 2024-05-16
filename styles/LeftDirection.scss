@@ -1,0 +1,6 @@
+@use "./RightDirection.scss" with (
+  $dir: ltr,
+  $marginr: 0px,
+  $marginl: 7px,
+  $left: 8%
+);

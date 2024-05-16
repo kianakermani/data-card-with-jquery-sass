@@ -78,29 +78,6 @@ input[type=checkbox] {
   margin-bottom: 15px;
 }
 
-.rDirection {
-  direction: rtl;
-}
-.rDirection .button-45 {
-  margin-right: 7px;
-}
-.rDirection .popup {
-  left: 52%;
-}
-
-.lDirection {
-  direction: ltr;
-}
-.lDirection .button-45 {
-  margin-left: 7px;
-}
-.lDirection .checked {
-  margin-right: 7px;
-}
-.lDirection .popup {
-  left: 8%;
-}
-
 /* styling popup */
 .popup {
   display: none;
@@ -150,38 +127,37 @@ select {
 
 .button-45 {
   background-color: #214d47;
-  border: 1px solid #b1d6d1;
+  border: 1px solid #b4d8d3;
   color: #59c4ad;
 }
 
 .button-45:hover {
   background-color: rgb(52, 126, 121);
-  border-color: #a4fae0;
+  border-color: #aefae3;
 }
 
 .popup {
-  border: 1px solid #ccc;
   background-color: #3f635b;
+  border: 1px solid #ccc;
 }
-
 .popup a {
   color: #b9b9b9;
 }
-
 .popup a:hover {
   background-color: #4e7d70;
 }
 
 .card-header {
-  background-color: #2f534e;
+  background-color: #30524e;
   color: #e1e1e1;
 }
 
 .card-body {
-  background-color: #2f534e;
-  color: #e1e1e1;
+  background-color: rgb(47, 82, 82);
+  color: rgb(245, 245, 245);
 }
 
+/* styling card footer */
 .card-footer {
-  background-color: #3f635b;
+  background-color: #335a51;
 }/*# sourceMappingURL=dark.css.map */
